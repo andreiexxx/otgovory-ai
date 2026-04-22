@@ -60,7 +60,7 @@ export default async function handler(req) {
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: 'claude-haiku-4-5-20251001',
+        model: 'anthropic/claude-haiku-4-5',
         max_tokens: 1500,
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
